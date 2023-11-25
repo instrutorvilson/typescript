@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/calculadora.js"></script>
+    </head>
+<body>
+    <input type="number" id="n1" placeholder="Informe numero">
+    <input type="number" id="n2" placeholder="Informe numero">
+    <button onclick="calcular()" >Calcular</button>
+    <Button onclick="verCep()">ver cep</Button>
+    <script>
+        function calcular(){
+            let n1 = parseInt(document.getElementById('n1').value)
+            let n2 = parseInt(document.getElementById('n2').value)
+            let resultado = soma(n1, n2)
+            alert(resultado)
+        }
+    </script>
+</body>
+</html>
