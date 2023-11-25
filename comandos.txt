@@ -1,0 +1,15 @@
+Instalar typescript > npm install typescript
+
+configurar script no package.json
+    "script"{
+        "start":"npx tsc --watch"
+    }
+
+rodar transpilador
+
+Documentação:
+https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+
+https://www.w3schools.com/typescript/index.php
+
+https://www.tutorialspoint.com/typescript/typescript_interfaces.htm
