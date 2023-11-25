@@ -1,11 +1,25 @@
-Instalar typescript > npm install typescript
+Instalar typescript 
+> npm install typescript
 
 configurar script no package.json
     "script"{
         "start":"npx tsc --watch"
     }
 
+Criar arquivo de configuação do typescript
+> tsc --init
+
+Configurar pasta onde código transpilado será colocado
+ tsconfig.json
+ {
+         -----------
+         outDir:'./xxx'
+         ----------
+ }
+
 rodar transpilador
+> npm run start
+
 
 Documentação:
 https://www.typescriptlang.org/docs/handbook/2/basic-types.html
