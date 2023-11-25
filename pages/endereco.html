@@ -5,17 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="../js/agenda.js"></script>
 </head>
 <body>
+    <div class="container">
+        <label class="form-label" for="cep">Informe cep</label>
+        <input class="form-control" type="text" id="cep" 
+        placeholder="Informe cep"
+        value="88355640"
+        onblur="verEndereco(this.value)"
+        >
+
+        <label class="form-label" for="cep">Informe rua</label>
+        <input class="form-control" type="text" id="rua" placeholder="Informe rua">
+
+        <label class="form-label" for="numero">Informe numero</label>
+        <input class="form-control" type="text" id="numero" placeholder="Informe numero">
+
+        <label class="form-label" for="bairro">Informe Bairro</label>
+        <input class="form-control" type="text" id="bairro" placeholder="Informe bairro">
+
+        <label class="form-label" for="cidade">Informe cidade</label>
+        <input class="form-control" type="text" id="cidade" placeholder="Informe cidade">
+
+        <label class="form-label" for="uf">Informe UF</label>
+        <input class="form-control" type="text" id="uf" placeholder="Informe uf">
+
+    </div>
     <script>
        /*async function verEndereco(){
            let dados = await getEndereco("89107000")
             console.log(dados)
         }*/
-        getEndereco("88355640").then(data => console.log(data))
+        function verEndereco(cep){
+            //let cep = document.getElementById('cep').value
+            getEndereco(cep).then(data => {
+                document.getElementById('rua').value = data.rua
+                document.getElementById('bairro').value = data.bairro
+                document.getElementById('cidade').value = data.cidade
+                document.getElementById('uf').value = data.uf
+            })
+        }
+        
 
-        verEndereco()
+       // verEndereco()
       // console.log(getEndereco("89107000"))
     </script>
 </body>
