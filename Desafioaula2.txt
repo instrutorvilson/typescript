@@ -1,0 +1,7 @@
+1) Criar a classe Jogador com os atributos: id, nome, idade, 
+criar o método categoria: idade até 12 anos infantil, acima de 12 e menor que 16 categoria juvenil, acima disso categoria adulto.
+
+2) Classe cliente: id, nome, email, cpf, cnpj, rg, inscricaoEstadual.
+
+Pessoa fisica: cpf, rg, id, nome, email;
+Pessoa judirica: cnpj, iE, id, nome, email.
