@@ -1,0 +1,19 @@
+criar backend JSON-server (ok)
+
+consumir a API
+criar páginas (crud)
+criar interface produto
+criar classe com os métodos CRUD
+
+
+npm init -y
+npm install typescript
+npx tsc --init
+
+tsconfig.json => outdir:"/js"
+
+script:{
+  "start":"npx tsc --watch"
+}
+
+https://www.freecodecamp.org/portuguese/news/tutorial-de-fetch-api-em-javascript-exemplos-de-post-e-cabecalho/
