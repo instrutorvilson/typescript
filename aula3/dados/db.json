@@ -30,5 +30,31 @@
       "estoque": 190,
       "id": 5
     }
+  ],
+  "carros": [
+    {
+      "placa": "abc-1234",
+      "marca": "volks",
+      "modelo": "fusca",
+      "id": 1
+    },
+    {
+      "placa": "abc-1234",
+      "marca": "volks",
+      "modelo": "fusca",
+      "id": 2
+    },
+    {
+      "placa": "def-2345",
+      "marca": "ford",
+      "modelo": "sapinho",
+      "id": 3
+    },
+    {
+      "placa": "def-2560",
+      "marca": "ford",
+      "modelo": "sapao",
+      "id": 4
+    }
   ]
 }
